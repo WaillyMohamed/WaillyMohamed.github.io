@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.flex-container > div{
+    font-size: 30px;
+    width: 30%;
+    height: 100%;
+    
+}
+.flex-container > div > button{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+    width: 60%;
+}
