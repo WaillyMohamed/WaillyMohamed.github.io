@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(32,14,58);
 }
 .flex-container {
     display: flex;
@@ -9,15 +9,18 @@ body{
 
 .flex-container > div{
     font-size: 30px;
-    width: 30%;
-    height: 100%;
+    
     
 }
 .flex-container > div > button{
     font-size: 30px;
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    
-    width: 60%;
+    padding: 1%;
+    width: 100%;
+    margin: auto;
+    border-style: solid;
+    border-color:rgb(56, 135, 190) ;
+}
+.flex-container > div > button:hover{
+    background-color:  rgb(82,211,216);
 }
