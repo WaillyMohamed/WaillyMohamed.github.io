@@ -1,3 +1,10 @@
 # WaillyMohamed.github.io
-This is a website I am building to showcase some of my achievements from competing in Tekken. 
-It will also help me practise utilizing HTML, CSS, and JavaScript for web development.
+This will be a portfolio website that I will update as I continue to work on other projects.
+Sections I will add:
+- About Page
+- Projects page (Added later)
+- Education
+- Interests
+
+This is a way for me to practise utilizing HTML, CSS, and Javascript!
+Hooray~
