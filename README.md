@@ -1,10 +1,12 @@
 # WaillyMohamed.github.io
 This will be a portfolio website that I will update as I continue to work on other projects.
-Sections I will add:
-- About Page
-- Projects page (Added later)
+Sections Include:
+- About Me
+- Projects page (Which will be constantly Updated)
 - Education
-- Interests
+- Socials (this may be added to about me)
+- Skills
+
 
 This is a way for me to practise utilizing HTML, CSS, and Javascript!
 Hooray~
