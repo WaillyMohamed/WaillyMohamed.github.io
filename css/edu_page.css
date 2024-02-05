@@ -1,0 +1,13 @@
+.school {
+    position: absolute; 
+    display:flex;
+    flex-direction:row;
+    font-style: bold;
+    width: 100%;
+    gap: 38%;
+}
+
+#Time{
+    font-style: italic;
+}
+
