@@ -5,9 +5,13 @@
     font-style: bold;
     width: 100%;
     gap: 38%;
+    color: white;
 }
 
 #Time{
     font-style: italic;
 }
 
+#awards{
+   
+}
