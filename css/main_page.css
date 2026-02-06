@@ -1,79 +1,96 @@
 html{
     margin: 0;
+   
 }
 body{
     margin: 0;
-    background-color: rgb(64, 162, 216);
-    overflow: hidden;
+    background-color: rgb(14, 16, 39);
+    overflow: auto;
     font-family: sans-serif;
 }
+/*
+Defines the sections of the page
+*/
 
 .page-select {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 15%;
     height: 100vh;
-    left: 5%;
-    
-    background-color: rgb(11,96,176);
+    left: 0%;
+    gap: 0px 15px;
+    position: fixed;
     justify-content: center;
+    overflow:auto;
 }
 .page-select > a{
     text-transform: capitalize;
     font-style: italic;
-    font-size: 25px;
+    font-size: 1.5vw;
     color:white;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(11,96,176);
+    
     padding-top: 20%;
     padding-bottom: 20%;
     
     
 }
 .page-select > a:hover{
-    background-color: rgb(64, 162, 216);
+    background-color: #282E73;
 }
 
-.portfolio-title {
-    position: absolute;
-    width: 85%;
+@media screen and (max-width: 900px){
     
-    left: 15%;
-    background-color: rgb(11,96,176);
+    .page-select {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 15%;
+        
+        position: relative;
+
+    }
+    .page-select a{
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: 1.5vw;
+        color:white;
+        text-align: center;
+        text-decoration: none;
+        
+    
+    
+    }
+
 }
-.portfolio-title > h1{
-    text-transform: uppercase;
-    font-style: italic;
-    text-decoration: underline;    
+
+@media screen and (max-width: 400px) {
+  .page-select a {
     text-align: center;
-    margin-top: 30px;
-    font-size: 8vh;
-    font-weight: 1000;
-    color: white;
-    
+    float: none;
+  }
 }
 
+/* Content background covers everything except the sections of the page*/
 
 .content-background {
-    position:absolute;
-    left: 15%;
-    top: 15%;
-    width: 85%; 
-    height:85%;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    left: 30%;
+    width: 100%; 
+    height: 85%;
     color: white;
+    
 }
 
 .content{
-    position: absolute;
-    left: 10%;
-    
-    font-size: 4vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     color: rgb(240, 237, 207);
-    width: 70%;
-    height: 100%;
 }
 
 .content > p{
@@ -82,5 +99,194 @@ body{
     font-size: 3vh;
 }
 
+
+/*Class for the image for the profile picture*/
+
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+.logos > img{
+    border-radius: 75%;
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    border: 0.5vh solid #ddd;
+    
+   
+}
+
+
+
+
+/* Intro contains the about section writing. Excludes the logos for linkedin and github profile  */
+
+.intro{
+    
+    left: 10%;
+    height: 100%;
+    width: 100%;
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+    top: 8%;
+}
+
+.last-name{
+    color: #5cd8cb;
+}
+
+
+.about-short{
+    text-align: center;
+}
+
+.enrolled{
+    color: rgb(64, 162, 216);
+}
+
+.contact{
+    display: inline-flex;
+    width: 100%;
+    color: #90dbd3;
+    text-align: center;
+    justify-content: center;
+    gap: 10px 10px;
+
+}
+
+.contact > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #90dbd3;
+}
+
+ion-icon {
+    
+    color: #90dbd3;
+
+}
+
+
+
+.school {
+  
+    display:flex;
+    flex-direction:row;
+    font-style: bold;
+    width: 100%;
+    
+    color: white;
+    height: 100%;
+    top: 20%;
+}
+
+.school > p{
+    margin-top:0;
+
+}
+
+#loc{
+    font-style: italic;
+    
+    right: 0%;
+}
+
+.awards{
+    
+    font-size: 3vh;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+}
+
+.awards > p{
+    
+    top: 2%;
+    font-style: italic;
+}
+
+.awards > ul{
+    
+    width: 100%;
+    height: 100%;
+    top: 6%;
+    
+}
+
+#two{
+    height: 100%;
+    top: 45%;
+}
+
+#two > .awards > ul{
+    
+    top: 2%;
+}
+
+#uni {
+    
+    width: 40%;
+    height: 30%;
+
+    bottom: 5%;
+}
+
+#second{
+    
+    width: 40%;
+    height: 30%;
+    right: 0%;
+    bottom: 5%;
+}
+
+.work {
+    
+    display:flex;
+    flex-direction:row;
+    font-style: bold;
+    width: 100%;
+    
+    color: white;
+    height: 100%;
+    top: 20%;
+}
+
+.work > p{
+    margin-top:0;
+
+}
+
+
+.role{
+    
+    font-size: 3vh;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+}
+
+.role > p{
+    
+    top: 2%;
+    font-style: italic;
+}
+
+.role > ul{
+    
+    width: 100%;
+    height: 100%;
+    top: 6%;
+    
+}
+
+
+#two > .role > ul{
+    
+}
 
 

@@ -3,48 +3,128 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/main_page.css">
-        <link rel="stylesheet" href="css/about_page.css">
     </head>
     
     <title>Wailly Mohamed Portfolio</title>
     
-    <div class="page-select">
-        <!--Make 3 Buttons. This is the home screen.-->
-        <a href="#about">About Me</a>
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="skills.html">Skills</a>
-       
-    </div>
-    <div class="portfolio-title">
-        <h1>Wailly Mohamed</h1>
-    </div>
-    
-    <div class="content-background">
-        <div class="content">
-           
-
-            <div class="intro"> 
-                <h3> <span class="greeting">Hello there</span>~ I'm <span class="name">Wailly</span>!</h3>
-                <p>I was born in Mississauga, raised in Brampton, and am currently studying in Ottawa!</p>
-
-                <p>I am a <span class="enrolled"><b>Third Year Undergraduate student</b> at <b>Carleton University</b>,
-                    in the <b>Bachelor's of Computer Science Major</b> program.</span> </p>
-                <p>I recently <span class="enrolled">completed a Co-op Work Term at <b>Innovapost</b> as a <b>Technical Specialist!</b></span></p>
-                <p>Fun Fact: I really like Shawarma and Cheesecake.</p>
-                
-            </div>
-            
+    <body>
+        <header>
+        <nav class="page-select">
+            <!--Make 3 Buttons. This is the home screen.-->
             <div class="logos">
                 <img src="images/Bidness2.jpg">
             </div>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+        </nav>
+        </header>
+    
+        <div class="content-background">
+            <div class="content">
+                <section id="about">
+                    <!-- Intro page essentially-->
+                    <div class="intro"> 
+                        <h1 class="about-short"> Wailly <span class="last-name">Mohamed</span></h1>
+                        <p> Carleton University Graduate <span class="last-name">•</span> Technical Specialist </p>
+                        <p>A Computer Science <b>Graduate</b> from <b>Carleton University</b>
+                            with a strong foundation in software development, data-driven applications, and modern web technologies.</p>
+                    </div>
+                
 
-            <div class="contact">
-                <a href="https://www.linkedin.com/in/wailly-mohamed/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
-                <a href="https://github.com/WaillyMohamed"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"></a>
-            </div>
-        </div>    
-    </div>
+                    <div class="contact">
+                        <a href="https://www.linkedin.com/in/wailly-mohamed/">
+                            <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                            <p>linkedin.com/in/wailly-mohamed/</p>
+                        </a>
+                        
+                        <a href="mailto:waillymohamed@cmail.carleton.ca"> 
+                            <ion-icon name="mail-outline" size="large"></ion-icon>
+                            <p>waillymohamed@cmail.carleton.ca</p>
+                        </a>
+                        
+                        <a href="https://github.com/WaillyMohamed">
+                            <ion-icon name="logo-github" size="large"></ion-icon>
+                            <p>github.com/WaillyMohamed/</p>
+                        </a>
+                        
+                    </div>
+                </section>
+                
+                <section id="education">
+                    <h2>Schools<hr></h2>
+                    <div class="school">
+                        <p>Carleton University</p>
+                        <p id="loc">Ottawa, ON</p>
+                        <div class="awards"> 
+                        <p>Bachelor of Computer Science Major</p>
+                            <ul>
+                                <li>Currently Enrolled</li>
+                                <li>Participated in “Hack the Tunnels” Hackathon in September 2023</li>
+                                <li>Received entrance Scholarship for the 2019-2020 term.</li>
+                            </ul>
+                        </div>  
+                    </div>
+                
+                    <div class="school" id="two">
+                        <p>David Suzuki Secondary School</p>
+                        <p id="loc">Brampton, ON</p>
+                        <div class="awards"> 
+                            <ul>
+                                <li>Graduated 2019</li>
+                                <li>Ontario Scholar Award (June 2019)</li>
+                                <li>Secondary School Honors Award (2017-2018)</li>
+                            </ul>
+                        </div>  
+                        
+                    </div>
+
+                    <img src="images/Carleton-University.jpg" id="uni">
+                    <img src="images/Secondary.jpg" id="second">
+
+                </section>
+
+                <section id="experience">
+                    <h2>Work Experience<hr></h2>
+                    <div class="work">
+                        <p>Innovapost</p>
+                        <p id="loc">Ottawa, ON</p>
+                        <div class="role"> 
+                        <p>Technical Specialist</p>
+                        <p id="loc">January-April 2024</p>
+                            <ul>
+                                <li>Assisted the Technical Team with code remediation, code compare and upgrading legacy code.</li>
+                                <li>Worked on the Experience Transformation Program with the Information Technology team at Innovapost, focusing on the technical upgrade from the legacy SAP system to the new SAP system. </li>
+                            </ul>
+                        </div>  
+                    </div>
+                    
+                    <div class="school" id="two">
+                        <p>The Brampton Guardian</p>
+                        <p id="loc">Brampton, ON</p>
+                        <div class="role"> 
+                            <p>Newspaper Carrier</p>
+                            <p id="loc">June 2015 - July 2016</p>
+                            <ul>
+                                <li>Assembled and delivered newspaper packages along an assigned distribution route.</li>
+                                <li>Scheduled plans to deliver all papers efficiently and reliably on time, which resulted in positive reception from customers.</li>
+                            </ul>
+                        </div>  
+                        
+                    </div>
+
+
+                </section>
+
+
+
+            </div>    
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
 
     
 </html>     
