@@ -2,7 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main_page.css">
+        
+
     </head>
     
     <title>Wailly Mohamed Portfolio</title>
@@ -62,7 +65,6 @@
                         <p>Carleton University</p> 
                         <p>Ottawa, ON</p>
                     </div> 
-
                     <ul>
                         <li>Graduated December 2025</li>
                         <li>CGPA: 8.86 / 12 (B)</li>
@@ -71,10 +73,78 @@
                     
                     <div class="courses"> 
                         <h3>All Courses</h3>
-                        <!-- Should be able to select by Year-->
-                        <ul>
 
-                        </ul>
+                        <!-- Should be able to select by Year-->
+                         <div class="course-tabs">
+                            <button type="button" data-year="1" class="active">First Year</button>
+                            <button type="button" data-year="2">Second Year</button>
+                            <button type="button" data-year="3">Third Year</button>
+                            <button type="button" data-year="4">Fourth Year</button>
+                         </div>
+                        <div class="year" data-year="1">
+                            <ul>
+                                <li>Mysteries of the Mind</li>
+                                <li>Intro to Computer Science I</li>
+                                <li>Intro to Computer Science II</li>
+                                <li>Discrete Structures I</li>
+                                <li>First-Year German I</li>
+                                <li>Introduction to Linguistics</li>
+                                <li>Elementary Calculus I</li>
+                                <li>Linear Algebra (Eng. or Sci) </li>
+                                <li>Introduction to Psychology I</li>
+                                <li>Introduction to Psychology II</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="year" data-year="2">
+                            <ul>
+                                <li>Intro to Systems Programming </li>
+                                <li>Abstract Data Types/Algorithms</li>
+                                <li>Intro to Software Engineering</li>
+                                <li>Fundamentals Web Application</li>
+                                <li>Discrete Structures</li>
+                                <li>The Mysteries of Language</li>
+                                <li>Elementary Calculus II</li>
+                                <li>Introduction to Symbolic Logic</li>
+                                <li>Critical Thinking</li>
+                                <li>Intro to European Russian Studies</li>
+                            </ul>
+
+                        </div>
+                        <div class="year" data-year="3">
+                            <ul>
+                                <li>Natural History</li>
+                                <li>Operating Systems </li>
+                                <li>Object-Oriented Software Engineering </li>
+                                <li>Intro to Relational Databases </li>
+                                <li>Introduction to Programming Paradigms </li>
+                                <li>Natural Disasters </li>
+                                <li>Climate Change: An Earth Sciences Perspective </li>
+                                <li>Introduction to Film Studies  </li>
+                                <li>History of Sport</li>
+                                <li>Introduction to Stat Modelling I</li>
+                                
+                            </ul>
+
+                        </div>
+                        <div class="year" data-year="4">
+                            <ul>
+                                <li>Natural History and Ecology of Ontario </li>
+                                <li>Applied Cryptography and Authentication </li>
+                                <li>Human-Computer Interaction </li>
+                                <li>Introduction to Artificial Intelligence </li>
+                                <li>Computer Systems Security </li>
+                                <li>Planet Hollywood </li>
+                                <li>History at the Movies </li>
+                                <li>Canadian Business History </li>
+                                <li>Physics Towards the Future  </li>
+                                <li>Philosophy of Religion </li>
+                                <li>Palestinian Soc and Culture</li>
+                            </ul>
+
+                        </div>
+                        
                     </div>
                     
                 
@@ -103,7 +173,7 @@
 
             </div>    
         </div>
-
+        <script src="js/script.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
