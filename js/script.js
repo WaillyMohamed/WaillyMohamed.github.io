@@ -1,11 +1,15 @@
+// Defining Constants
 // Course viewing section
-const buttons = document.querySelectorAll(".course-tabs button");
+const courses = document.querySelectorAll(".course-tabs button");
 const years = document.querySelectorAll(".year");
 
+// Project detail 
+const projects = document.querySelectorAll(".project-select button"); // Buttons
+
 // loop through each button
-buttons.forEach(btn => {
+courses.forEach(btn => {
     btn.addEventListener("click", () => {
-        buttons.forEach(b => b.classList.remove("active"));
+        courses.forEach(b => b.classList.remove("active"));
         years.forEach(y => y.classList.remove("visible"));
 
         btn.classList.add("active");
@@ -14,3 +18,22 @@ buttons.forEach(btn => {
       
     })
 })
+
+projects.forEach(btn => {
+    btn.addEventListener("click", () => {
+        projects.forEach( b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+
+        // Hide the project elements
+        document.querySelectorAll("[data-project]").forEach(el => {
+            el.classList.remove("visible");
+        })
+
+        // show the selected project elements
+        document.querySelectorAll(`[data-project="${btn.dataset.project}"]`).forEach(p => {
+            p.classList.add("visible");
+        })
+    })
+})
+

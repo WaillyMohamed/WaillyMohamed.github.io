@@ -190,6 +190,10 @@ p {
     margin: 0;
 }
 
+h1 {
+    margin-bottom: 0;
+}
+
 /* Next Section is for the Education part */
 
 
@@ -253,12 +257,79 @@ p {
   flex-direction: column;
 }
 
+.year [data-year].visible {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 
 #experience {
     font-size: 3vh; 
 }
 
+#projects {
+    display:flex;
+    flex-direction: column;
+    font-size: 3vh;
+    width: 100%;
+}
 
 
 
+/* project section */
+.project-select {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 
+.project-select > button {
+    width:33%;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    padding: 0.75rem 1rem;
+
+}
+
+.project-title {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.project-details [data-project] {
+  display: none;
+}
+
+.project-details [data-project].visible {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.project-tech [data-project].visible{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.project-tech span {
+    display:inline-block;
+    padding: 0.35rem 0.7rem;
+    margin: 0.25rem;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    background-color: rgba(255, 255, 255, 0.05); /* subtle contrast */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 999px;
+
+    transition: all 0.2s ease;
+}
