@@ -18,6 +18,14 @@ courses.forEach(btn => {
       
     })
 })
+// Add the initial click to my default button ( the first one )
+document.addEventListener("DOMContentLoaded", () => {
+    const defaultBtn = document.querySelector(".course-tabs button.active");
+    if (defaultBtn) {
+        defaultBtn.click();
+    }
+});
+
 
 projects.forEach(btn => {
     btn.addEventListener("click", () => {

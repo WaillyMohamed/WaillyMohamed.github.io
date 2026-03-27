@@ -243,9 +243,19 @@ h1 {
     
 }
 
-.course-tabs > button {
+.course-tabs button {
+    background-color: rgb(14, 16, 39);
+    color: white;
     font-size: 1.5vmax;
     width: 25%;
+}
+.course-tabs button.active {
+    color: #90dbd3;
+}
+
+.course-tabs > button:hover {
+    background-color: #282E73;
+    
 }
 
 .year {
@@ -284,15 +294,23 @@ h1 {
     width: 100%;
 }
 
-.project-select > button {
-    width:33%;
-    font-size: 0.95rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+.project-select button {
+    background-color: rgb(14, 16, 39);
+    color: white;
+    font-size: 1.5vmax;
+    width: 33.3333%;
 
-    padding: 0.75rem 1rem;
 
 }
+
+.project-select button.active{
+    color: #90dbd3;
+}
+
+.project-select button:hover{
+    background-color: #282E73;
+}
+
 
 .project-title {
     display: flex;
