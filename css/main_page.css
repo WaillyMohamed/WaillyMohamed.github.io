@@ -173,7 +173,7 @@ Defines the sections of the page
     flex-direction: row;
     align-items: center;
     color: #90dbd3;
-    font-size: 1.5vmin;
+    font-size: 2vmin;
 }
 
 ion-icon {
@@ -208,16 +208,22 @@ h1 {
 
 
 .school {
-  
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     font-weight: bold;
     margin: 0;
     padding: 0;
-   
 
 }
+
+
+@media (max-width: 600px){
+    .school {
+        flex-direction: column;
+    }
+}
+
 
 .program{
     display:flex;
@@ -246,7 +252,7 @@ h1 {
 .course-tabs button {
     background-color: rgb(14, 16, 39);
     color: white;
-    font-size: 1.5vmax;
+    font-size: 2.5vmin;
     width: 25%;
 }
 .course-tabs button.active {
@@ -297,7 +303,7 @@ h1 {
 .project-select button {
     background-color: rgb(14, 16, 39);
     color: white;
-    font-size: 1.5vmax;
+    font-size: 2.5vmin;
     width: 33.3333%;
 
 
@@ -341,7 +347,7 @@ h1 {
     padding: 0.35rem 0.7rem;
     margin: 0.25rem;
 
-    font-size: 1.5vmin;
+    font-size: 2vmin;
     
 
     background-color: rgba(255, 255, 255, 0.05); /* subtle contrast */
