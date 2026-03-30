@@ -21,7 +21,7 @@ Defines the sections of the page
     gap: 0px 15px;
     position: fixed;
     justify-content: center;
-    overflow:auto;
+    overflow: auto;
 }
 .page-select > a{
     text-transform: capitalize;
@@ -139,7 +139,7 @@ Defines the sections of the page
     left: 10%;
     height: 100%;
     width: 100%;
-    font-size: 3vh;
+    font-size: 3vmin;
     color: white;
     text-align: center;
     top: 8%;
@@ -183,7 +183,7 @@ ion-icon {
 
 
 section > h2{ /* Section header size essentially */
-    font-size: 3.5vh;
+    font-size: 3.5vmin;
 }
 
 p {
@@ -198,7 +198,7 @@ h1 {
 
 
 #education {
-    font-size: 3vh;
+    font-size: 3vmin;
     color: white;
     padding: 0;
     margin: 0;
@@ -275,13 +275,13 @@ h1 {
 
 
 #experience {
-    font-size: 3vh; 
+    font-size: 3vmin; 
 }
 
 #projects {
     display:flex;
     flex-direction: column;
-    font-size: 3vh;
+    font-size: 3vmin;
     width: 100%;
 }
 
@@ -341,8 +341,8 @@ h1 {
     padding: 0.35rem 0.7rem;
     margin: 0.25rem;
 
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: 1.5vmin;
+    
 
     background-color: rgba(255, 255, 255, 0.05); /* subtle contrast */
     border: 1px solid rgba(255, 255, 255, 0.08);
