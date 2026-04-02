@@ -176,6 +176,27 @@ Defines the sections of the page
     font-size: 2vmin;
 }
 
+@media screen and (max-width: 1200px){
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: #90dbd3;
+        text-align: center;
+        gap: 10px 10px;
+
+    }
+
+    .contact > a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #90dbd3;
+        font-size: 2vmin;
+    }
+}
+
 ion-icon {
     
     color: #90dbd3;
